@@ -16,7 +16,8 @@ router.post('/', async (req, res) => {
 // GET all feedback
 router.get('/', async (req, res) => {
   const feedbacks = await Feedback.find();
-  res.json(feedbacks);
+  //res.json(feedbacks);
+  res.send("Feedback route working");
 });
 
 module.exports = router;
